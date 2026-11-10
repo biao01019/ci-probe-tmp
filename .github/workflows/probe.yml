@@ -1,0 +1,11 @@
+name: probe
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  u:
+    name: ubuntu probe
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo hello
